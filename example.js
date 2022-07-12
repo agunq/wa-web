@@ -20,8 +20,8 @@ client = new Client({
     	authStrategy: new LocalAuth(),
 	//authStrategy: new LegacySessionAuth(),
 	//puppeteer: { headless: false }
-	puppeteer: {
-       	executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+	//puppeteer: {
+       	//executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
     	}
 });
 
@@ -29,7 +29,6 @@ client = new Client({
 client.on('qr', (qr) => {
     	// Generate and scan this code with your phone
     	console.log('QR RECEIVED', qr);
-
 	qrcode.generate(qr, {small: true}, function (qrcode) {
     		console.log(qrcode)
 	});
