@@ -5,16 +5,7 @@ const axios = require('axios');
 const Scraper = require('@yimura/scraper').default;
 const youtube = new Scraper();
 
-function downloadGambar(url){
-	return axios.get(url, {responseType: 'arraybuffer'})
-		.then(response => Buffer.from(response.data, "binary").toString("base64"))
-}
-
-
-const SESSION_FILE_PATH = './session.json';
-let sessionCfg;
 var client;
-
 
 client = new Client({
     	authStrategy: new LocalAuth(),
