@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "description": "just clone from whatsapp-web.js",
   "main": "example.js",
-  "devDependencies": {"puppeteer": "^15.3.2"},
+  "devDependencies": {"puppeteer": "^13.7.0"},
   "scripts": {
     "test": "node example.js"
   },
