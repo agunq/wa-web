@@ -4,14 +4,13 @@
     "axios": "^0.27.2",
     "fs": "^0.0.1-security",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.17.1",
-    "puppeteer": "^15.3.2"
+    "whatsapp-web.js": "^1.17.1"
   },
   "name": "wa-bot",
   "version": "1.0.0",
   "description": "just clone from whatsapp-web.js",
   "main": "example.js",
-  "devDependencies": {},
+  "devDependencies": {"puppeteer": "^15.3.2"},
   "scripts": {
     "test": "node example.js"
   },
