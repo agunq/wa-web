@@ -19,6 +19,7 @@ var client;
 client = new Client({
     	authStrategy: new LocalAuth(),
 	//authStrategy: new LegacySessionAuth(),
+	puppeteer: { args: ['--no-sandbox'] }
 	//puppeteer: 	{ headless: false }
 	//puppeteer:	{
        	//executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
