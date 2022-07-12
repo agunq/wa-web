@@ -1,0 +1,7 @@
+{
+  "name": "whatsapp-web",
+  "description": "just client for whatsapp web version",
+  "repository": "https://github.com/agunq/wa-web",
+  "keywords": ["node", "heroku"],
+  "image": "heroku/nodejs"
+}
