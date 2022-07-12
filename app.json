@@ -3,5 +3,16 @@
   "description": "just client for whatsapp web version",
   "repository": "https://github.com/agunq/wa-web",
   "keywords": ["node", "heroku"],
-  "image": "heroku/nodejs"
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ]
 }
