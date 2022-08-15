@@ -13,7 +13,7 @@ client = new Client({
 	puppeteer: {
 		headless: true, 
 		args: ['--no-sandbox'],
-		executablePath: '/usr/bin/google-chrome-stable'
+		executablePath: '/app/.apt/usr/bin/google-chrome'
 	}
 });
 
