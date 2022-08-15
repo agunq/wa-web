@@ -10,11 +10,11 @@ var client;
 client = new Client({
     	authStrategy: new LocalAuth(),
 	//authStrategy: new LegacySessionAuth(),
-	puppeteer: { headless: true, args: ['--no-sandbox'] }
-	//puppeteer: 	{ headless: false }
-	//puppeteer:	{
-       	executablePath: '/usr/bin/google-chrome-stable'
-    	//		}
+	puppeteer: {
+		headless: true, 
+		args: ['--no-sandbox'],
+		executablePath: '/usr/bin/google-chrome-stable'
+	}
 });
 
 
